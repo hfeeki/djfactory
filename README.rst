@@ -12,7 +12,7 @@ Install
 What is it?
 ===========
 
-djfactory is the core of `playdoh`_, My Django starter kit, based on Mozilla's Playdoh.
+djfactory is the core of `djiashoujia`_, My Django starter kit, based on Mozilla's Playdoh.
 djfactory is *not* a collection of standalone apps.
 
 Check out the `djiashoujia docs`_ for a complete user guide.
