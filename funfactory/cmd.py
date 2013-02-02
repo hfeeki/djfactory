@@ -262,8 +262,8 @@ def main():
                        'Default: %default',
                   default=os.getcwd())
     ps.add_option('-r', '--repo',
-                  help='Playdoh repository to clone. Default: %default',
-                  default='git://github.com/mozilla/playdoh.git')
+                  help='Djiashoujia repository to clone. Default: %default',
+                  default='git://github.com/hfeeki/djiashoujia.git')
     ps.add_option('-b', '--branch',
                   help='Repository branch to clone. Default: %default',
                   default='master')
