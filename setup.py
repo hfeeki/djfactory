@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 
 
 version = None
-for line in open('./funfactory/__init__.py'):
+for line in open('./djfactory/__init__.py'):
     m = re.search('__version__\s*=\s*(.*)', line)
     if m:
         version = m.group(1).strip()[1:-1]  # quotes
@@ -14,7 +14,7 @@ assert version
 
 
 setup(
-    name='funfactory',
+    name='djfactory',
     version=version,
     description="Mozilla's Django app skeleton.",
     long_description=open(os.path.join(os.path.dirname(__file__),
@@ -22,7 +22,7 @@ setup(
     author='Kumar McMillan and contributors',
     author_email='',
     license="BSD License",
-    url='https://github.com/mozilla/funfactory',
+    url='https://github.com/hfeeki/djfactory',
     include_package_data=True,
     classifiers = [
         'Intended Audience :: Developers',
@@ -33,6 +33,6 @@ setup(
     packages=find_packages(exclude=['tests']),
     entry_points="""
     [console_scripts]
-    funfactory = funfactory.cmd:main
+    djfactory = djfactory.cmd:main
     """,
     install_requires=[])
