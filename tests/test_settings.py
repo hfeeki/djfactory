@@ -4,8 +4,8 @@ from django.core.exceptions import ImproperlyConfigured
 from mock import Mock, patch
 from nose.tools import eq_, raises
 
-from funfactory.manage import validate_settings
-from funfactory.settings_base import (get_apps, get_middleware,
+from djfactory.manage import validate_settings
+from djfactory.settings_base import (get_apps, get_middleware,
     get_template_context_processors)
 
 
@@ -73,7 +73,7 @@ def test_get_apps():
     eq_(get_apps(exclude=('harpo', 'zeppo'), append=('chico',),
         current={'apps': ('groucho', 'harpo', 'zeppo')}),
         ('groucho', 'chico'))
-    eq_(get_apps(exclude=('funfactory'), append=('gummo',)), get_apps())
+    eq_(get_apps(exclude=('djfactory'), append=('gummo',)), get_apps())
 
 
 def test_get_middleware():

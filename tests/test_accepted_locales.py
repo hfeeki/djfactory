@@ -4,7 +4,7 @@ import shutil
 from django.conf import settings
 import test_utils
 
-from funfactory.manage import path
+from djfactory.manage import path
 
 
 class AcceptedLocalesTest(test_utils.TestCase):

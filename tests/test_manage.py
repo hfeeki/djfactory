@@ -4,7 +4,7 @@ import unittest
 
 from nose.tools import eq_, raises
 
-from funfactory.manage import import_mod_by_name
+from djfactory.manage import import_mod_by_name
 
 
 class TestImporter(unittest.TestCase):

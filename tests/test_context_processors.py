@@ -5,7 +5,7 @@ from django.test import TestCase, RequestFactory
 
 from mock import patch
 
-import funfactory.context_processors
+import djfactory.context_processors
 
 
 class TestContext(TestCase):
@@ -28,7 +28,7 @@ class TestContext(TestCase):
     def test_languages(self):
         eq_(self.render("{{ LANGUAGES['en-us'] }}"), 'English (US)')
 
-    @patch.object(funfactory.context_processors, 'translation')
+    @patch.object(djfactory.context_processors, 'translation')
     def test_languages(self, translation):
         translation.get_language.return_value = 'en-US'
         eq_(self.render("{{ LANG }}"), 'en-US')

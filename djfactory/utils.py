@@ -3,7 +3,7 @@ import logging
 from django.conf import settings
 
 
-log = logging.getLogger('funfactory')
+log = logging.getLogger('djfactory')
 
 
 def absolutify(url):

@@ -1,4 +1,4 @@
-from funfactory.urlresolvers import split_path
+from djfactory.urlresolvers import split_path
 from nose.tools import eq_
 
 

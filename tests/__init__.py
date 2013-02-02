@@ -6,19 +6,19 @@ import sys
 
 from nose.plugins import Plugin
 
-from funfactory import manage
+from djfactory import manage
 
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-PLAYDOH_ROOT = '.playdoh'
+PLAYDOH_ROOT = '.djiaoshoujia'
 PLAYDOH = os.path.join(ROOT, PLAYDOH_ROOT, 'funtestapp')
 ENVIRONMENT_NOTE = os.path.join(ROOT, PLAYDOH_ROOT, 'last-env.txt')
 shell = partial(check_call, shell=True)
 DB_USER = os.environ.get('FF_DB_USER', 'root')
 DB_PASS = os.environ.get('FF_DB_PASS', '')
-DB_NAME = os.environ.get('FF_DB_NAME', '_funfactory_test')
+DB_NAME = os.environ.get('FF_DB_NAME', '_djfactory_test')
 FF_PLAYDOH_REMOTE = os.environ.get('FF_PLAYDOH_REMOTE',
-                                   'git://github.com/mozilla/playdoh.git')
+                                   'git://github.com/hfeeki/djiaoshoujia.git')
 FF_PLAYDOH_BRANCH = os.environ.get('FF_PLAYDOH_BRANCH', 'master')
 
 
@@ -113,10 +113,10 @@ class FunFactoryTests(Plugin):
             manage.setup_environ(os.path.join(PLAYDOH, 'manage.py'))
         finally:
             os.chdir(wd)
-        # Puts path back to this dev version of funfactory:
+        # Puts path back to this dev version of djfactory:
         sys.path.insert(0, ROOT)
 
         # simulate what django does, which is to import the root urls.py
         # once everything has been set up (e.g. setup_environ())
-        from funfactory.monkeypatches import patch
+        from djfactory.monkeypatches import patch
         patch()

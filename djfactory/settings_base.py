@@ -182,8 +182,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'session_csrf.context_processor',
     'django.contrib.messages.context_processors.messages',
-    'funfactory.context_processors.i18n',
-    'funfactory.context_processors.globals',
+    'djfactory.context_processors.i18n',
+    'djfactory.context_processors.globals',
     #'jingo_minify.helpers.build_ids',
 )
 
@@ -251,7 +251,7 @@ def JINJA_CONFIG():
 ## Middlewares, apps, URL configs.
 
 MIDDLEWARE_CLASSES = (
-    'funfactory.middleware.LocaleURLMiddleware',
+    'djfactory.middleware.LocaleURLMiddleware',
     'multidb.middleware.PinningRouterMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -282,7 +282,7 @@ def get_middleware(exclude=(), append=(),
 
 INSTALLED_APPS = (
     # Local apps
-    'funfactory',  # Content common to most playdoh-based apps.
+    'djfactory',  # Content common to most playdoh-based apps.
     'compressor',
 
     'tower',  # for ./manage.py extract (L10n)

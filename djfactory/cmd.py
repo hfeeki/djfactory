@@ -58,8 +58,8 @@ def init_pkg(pkg, repo_dest):
         index 312f280..c75e673 100644
         --- a/project/settings/base.py
         +++ b/project/settings/base.py
-        @@ -7,7 +7,7 @@ from funfactory.settings_base import *
-         # If you did not install Playdoh with the funfactory installer script
+        @@ -7,7 +7,7 @@ from djfactory.settings_base import *
+         # If you did not install Djiaoshoujia with the djfactory installer script
          # you may need to edit this value. See the docs about installing from a
          # clone.
         -PROJECT_MODULE = 'project'

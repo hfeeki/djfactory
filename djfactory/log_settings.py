@@ -49,7 +49,7 @@ cfg = {
         },
         'arecibo': {
             'level': 'ERROR',
-            'class': 'funfactory.log.AreciboHandler',
+            'class': 'djfactory.log.AreciboHandler',
         },
         'mail_admins': {
             'level': 'ERROR',

@@ -4,7 +4,7 @@ from mock import patch
 from nose.tools import eq_
 from django.test import TestCase
 
-import funfactory.utils as utils
+import djfactory.utils as utils
 
 
 @patch.object(settings, 'DOMAIN', 'test.mo.com')

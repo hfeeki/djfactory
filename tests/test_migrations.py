@@ -4,7 +4,7 @@ from os.path import join
 
 from django.test import TestCase
 
-from funfactory.manage import path
+from djfactory.manage import path
 
 
 class MigrationTests(TestCase):
