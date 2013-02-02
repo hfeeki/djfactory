@@ -263,7 +263,7 @@ def main():
                   default=os.getcwd())
     ps.add_option('-r', '--repo',
                   help='Djiashoujia repository to clone. Default: %default',
-                  default='git://github.com/hfeeki/djiashoujia.git')
+                  default='git://github.com/hfeeki/djiaoshoujia.git')
     ps.add_option('-b', '--branch',
                   help='Repository branch to clone. Default: %default',
                   default='master')
